@@ -31,6 +31,11 @@ public class Unzip_Adressfactory {
         new Unzip_Adressfactory().extractArchive(new String(
                 "\\\\Svl-fil02\\msg$\\Msg allgemein\\Vertrieb\\temp_daten"), new File(
                 "\\\\Svl-fil02\\msg$\\Msg allgemein\\Vertrieb\\temp_daten"));
+        String [] args2;
+        args2 = new String [2];
+        args2[0]="\\\\Svl-fil02\\msg$\\Msg allgemein\\Vertrieb\\temp_daten\\1_Abos_fertig_.xls";
+        args2[1]="\\\\Svl-fil02\\msg$\\Msg allgemein\\Vertrieb\\temp_daten\\1_Abos_rueck.csv";
+        ConvertCSV.main(args2);
     }
  
     public void extractArchive(String archive, File destDir) throws Exception {
